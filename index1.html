@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Check</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="icon" href="icons/icon.png" type="image/x-icon">
+</head>
+<body>
+    <video autoplay muted loop class="myVideo">
+        <source type="video/mp4" class="video">
+      </video>
+    <div class="container">
+        <div class="search">
+        <input type="text" placeholder="Search" class="bar">
+            <button class="icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+           </div>
+           <div class="error">
+            <p>Invalid City Name</p>
+            <img src="icons/error.webp" alt="error" height="350px" width="350px">
+           </div>
+           <div class="disp">
+             <div class="city">
+            <p class="cityy">New York</p>
+        </div>
+        <div class="weather">
+             <img class="image" src="icons/clear.png" alt="sunny" height="80vh" width="80vw">
+            <p class="temp">33 °C</p>
+        </div>
+        <div class="rest">
+            <div class="div1">
+                <div class="pressure">
+                    <div class="img">
+                <img class="i" src="icons/pressure-gauge.png" height="70vh" width="70vw"></div>
+                <div class="p">
+                <p class="pres">0.98 atm
+                    <p>Pressure</p>
+                    </p>
+                </div>
+                </div>
+                <div class="humidity">
+                    <div class="img">
+                <img class="i" src="icons/humidity.png" height="70vh" width="70vw"></div>
+                <div class="h">
+                <p class="humid">51% 
+                    <p>Humidity</p>
+                    </p>
+                </div>
+            </div>
+            </div>
+            <div class="div2 ">
+                <div class="speed">
+                    <div class="img">
+                <img class="i" src="icons/wind.png" height="70vh" width="70vw"></div>
+                <div class="w">
+                <p class="wind">3.29 km/h
+                    <p>Wind Speed</p>
+                    </p>
+                </div>
+                </div>
+                <div class="visibility">
+                    <div class="img">
+                <img class="i" src="icons/eye.png" height="70vh" width="70vw"></div>
+                <div class="v">
+                <p class="vis">7 mi
+                    <p>Visibility</p>
+                </p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="date">
+                <p id="demo">28th July, 2024</p>
+            </div>
+            </div>
+    </div>
+        <script src="script.js"></script>            
+</body>
+</html>

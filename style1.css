@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900');
+body{
+    background-color: #333333;
+
+}
+.myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+.container{
+    backdrop-filter: blur(40px);
+    font-family: Poppins;
+    color:white;
+    height: 82vh;
+    width:45vw;
+    margin: 10px auto 10px;
+    margin-top: 70px;
+    /* border:2px solid black; */
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.bar{
+    height: 5vh;
+    width: 30vw;
+    border-radius: 5px;
+}
+input{
+    font-family: Poppins;
+    padding-right: 10px;
+    padding-left: 10px;
+    border:none;
+}
+.icon{
+    margin:2px;
+    height: 5vh;
+    width: 5vw;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+}
+.city{
+    display: flex;
+    height: 10vh;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.weather{
+    height: 10vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 0px;
+}
+.temp{
+    padding-left:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rest{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin:10px auto 0;
+    padding: 10px auto 10px;
+}
+.div1, .div2{
+    display:flex;
+    flex-direction: row ;
+    column-gap:30px;
+    justify-content: center;
+    align-items: center;
+}
+.pressure, .speed, .humidity, .visibility{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    width:20vw;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top:0px;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .error{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* row-gap: 0px; */
+    font-weight: bold;
+    font-size: 25px;
+    display: none;
+ }
+@media screen and (max-width:922px){
+    .container{
+        height: 85vh;
+    width:70vw;
+    }
+    .bar{
+        width:50vw;
+    }
+    .div1, .div2{
+        column-gap:70px;
+    }
+    .pressure, .speed, .humidity, .visibility{
+        width:25vw;
+    }
+}
+@media screen and (max-width:740px){
+    .pressure, .speed, .humidity, .visibility{
+        width:27vw;
+    }
+}
+@media screen and (max-width:685px){
+    .div1, .div2{
+        column-gap:40px;
+    }
+    .pressure, .speed, .humidity, .visibility{
+        width:30vw;
+    }
+}
+@media screen and (max-width:615px){
+    .weather , .city{
+        font-size: 35px;
+    }
+    .icon{
+        width:8vw;
+    }
+     .container{
+        width:85vw;
+     }
+     .image{
+height: 70px;
+width: 70px;
+     }
+     .i{
+        height: 60px;
+        width: 60px;
+     }
+    .pressure, .speed, .humidity, .visibility{
+        width:30vw;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:375px){
+    .container{
+        height:40%
+    }
+.div1, .div2{
+    flex-direction: column;
+    row-gap: 10px;
+}
+.pressure, .speed, .humidity, .visibility{
+    width:50vw;
+}
+.date{
+    font-size: 20px;
+}
+}
